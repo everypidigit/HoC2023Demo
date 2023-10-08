@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>/hour_of_code</title>
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background: #f8f8f8;
+		}
+
+		header {
+			background: #111;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+
+		header .logo {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			/* Adjusted alignment to the left */
+			margin-bottom: 10px;
+		}
+
+		header .logo img {
+			margin-right: 10px;
+			max-width: 50px;
+			/* Adjust the width of the logo */
+			height: auto;
+		}
+
+		header h1 {
+			font-size: 24px;
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+			background: #141414;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			flex-grow: 1;
+			margin: 0 5px;
+			font-weight: bold;
+			font-size: 16px;
+			letter-spacing: 0.5px;
+			padding: 10px;
+			border: 2px solid #fff;
+			border-radius: 5px;
+			text-align: center;
+			text-transform: uppercase;
+			transition: background 0.3s, color 0.3s;
+		}
+
+		nav a:hover {
+			background: #fff;
+			color: #111;
+		}
+
+		section {
+			border-bottom: 2px solid #ddd;
+			/* Added border between sections */
+		}
+
+		section.hero {
+			background: url('https://assets-global.website-files.com/621e749a546b7592125f38ed/64410a99d52cf88103c4b88c_GDM_16_9.jpg') center/cover no-repeat;
+			text-align: center;
+			color: #000;
+			/* Changed text color to black */
+			padding: 100px 20px;
+		}
+
+		section.hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+
+		section.hero p {
+			font-size: 18px;
+			max-width: 600px;
+			margin: 0 auto;
+			line-height: 1.6;
+			color: #000;
+			/* Changed text color to black */
+		}
+
+		section.cta {
+			background: #fff;
+			text-align: center;
+			padding: 100px 20px;
+		}
+
+		section.cta h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			color: #111;
+		}
+
+		section.cta p {
+			font-size: 18px;
+			max-width: 600px;
+			margin: 0 auto;
+			line-height: 1.6;
+			color: #555;
+		}
+
+		section.cta button {
+			background: #111;
+			color: #fff;
+			padding: 15px 30px;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background 0.3s;
+		}
+
+		section.cta button:hover {
+			background: #333;
+		}
+
+		section.feature1,
+		section.feature2 {
+			background: #fff;
+			text-align: ;
+			padding: 100px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+			/* Keep the default direction */
+		}
+
+		section.feature img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 8px;
+			margin-right: 20px;
+			/* Add margin to separate image and text */
+		}
+
+		section.feature p {
+			font-size: 18px;
+			max-width: 600px;
+			margin: 0 auto;
+			line-height: 1.6;
+			color: #555;
+		}
+
+		section.video-section {
+			text-align: center;
+			padding: 100px 20px;
+			background: #fff;
+			/* Set the background color for the video section */
+		}
+
+		section.video-section h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			color: #111;
+		}
+
+		section.video-section iframe {
+			width: 100%;
+			/* Make the video responsive within its container */
+			max-width: 800px;
+			/* Adjust the maximum width as needed */
+			height: 450px;
+			/* Adjust the height as needed */
+		}
+
+		footer {
+			background: #111;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="https://edu.irobot.com/assets/img/HourOfCode_logo_RGB.jpg" alt="Logo">
+			<h1>/hour_of_code_0010</h1>
+		</div>
+	</header>
+
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">Our Impact</a>
+		<a href="#">Digital Bridge 2023</a>
+		<a href="#">Contacts</a>
+	</nav>
+
+	<section class="hero">
+		<h1>Embark on a journey to promote greater things</h1>
+		<p>More than 7000 children went through our hands</p>
+	</section>
+
+	<section class="cta">
+		<h2>Want to b3come an instruct0r?</h2>
+		<p>Contact us and become a herald of change in a matter of seconds.</p>
+		<a href="https://www.youtube.com/watch?v=87mjd8W9UeA">
+			<button>CONTACT US</button>
+		</a>
+	</section>
+
+	<section class="video-section">
+		<h2>watch_the_HoC2022_impact:</h2>
+		<!-- Replace the video URL with your own YouTube video URL -->
+		<iframe width="560" height="315" src="https://www.youtube.com/watch?v=71JD_dRiMm4" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+	<section class="feature1">
+		<img
+			src="https://assets.deloitte.com/is/image/deloitte/ai-next-frontier-investment-management-b:800-x-600?$Responsive$&fmt=webp&fit=stretch,1&dpr=off"
+			alt="Feature 1 Image">
+		<p>We teach people AI.</p>
+	</section>
+
+	<section class="feature2">
+		<img
+			src="https://assets.deloitte.com/is/image/deloitte/ai-next-frontier-investment-management-b:800-x-600?$Responsive$&fmt=webp&fit=stretch,1&dpr=off"
+			alt="Feature 2 Image">
+		<p>Computer Science and Robotics are the future of the world. Are you ready for it?</p>
+	</section>
+
+
+
+
+	<footer>
+		<p>&copy; Hour of Code, 2023</p>
+	</footer>
+
+</body>
+
+</html>
