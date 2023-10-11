@@ -10,6 +10,8 @@
 
 <body>
 
+
+    <!-- HEADER -->
     <header>
         <div>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
@@ -26,29 +28,43 @@
         </div>
     </header>
 
-    <nav>
-        <a href="#">главная</a>
-        <a href="#">отчёт</a>
-        <a href="#">контакты</a>
+
+    <!-- NAV -->
+    <nav id="nav" style="border:3px solid #1bacbb;">
+        <a href="#hero">главная</a>
+        <a href="#media">отчёт</a>
+        <a href="#contacts">контакты</a>
         <a href="#">спонсоры</a>
     </nav>
 
-    <div class="row">
-        <div class="column-media" style="background-color:#dedede">
-            <img src="https://assets-global.website-files.com/621e749a546b7592125f38ed/64410a99d52cf88103c4b88c_GDM_16_9.jpg" style="width:250%; height:auto; text-align:center">
+
+    <!-- HERO SECTION -->
+    <div class="row" id="hero" style="border:3px solid #1bacbb;" >
+        <div class="column-hero-image" style="background-color:#dedede; ">
+            <img src="imgs/hero1.png" 
+            style="
+            width:100%; 
+            height:100%; 
+            text-align:center;
+            border: 1px solid black">
         </div>
         
-        <div class="column-hero-text" style="background-color:#dedede;">
+        <div class="column-hero-text" 
+             style="background-color:#dedede;">
+            <p>
             <h2>Добро пожаловать в мир кода!</h2>
-            <p><a href="#"><button class="hero-button">Начать</button></a></p>
-            <p><a href="#"><button class="hero-button">Регистрация волонтёров</button></a></p>
+            <a href="#"><button class="hero-button">Начать</button></a>
+            <a href="#"><button class="hero-button">Регистрация волонтёров</button></a>
+            </p>
         </div>
     </div>
 
-    <div class="row-info">
+
+    <!-- INFO SECTION -->
+    <div class="row-info" id="info" style="border:3px solid #1bacbb;" id="info">
 
         <div class="column-info-text" style="background-color:#dedede;">
-            <h1 style="text-transform: uppercase;">Что такое Час Кода?</h1>
+            <h1 style="text-transform: uppercase;text-align: centered;">Что такое Час Кода?</h1>
             <p>Час кода - это глобальное движение, 
             которое охватывает несколько миллионов 
             студентов и учеников из более 180 стран. 
@@ -84,44 +100,83 @@
             </div>
     </div>
 
-    <h1 style="text-transform: uppercase; text-align: centered;"> In media: </h1>
 
-    <div class="row">
+    <!-- MEDIA SECTION -->
+    <h1 style="text-transform: uppercase; text-align: centered;"> Медиа: </h1>
+    <div class="row" id="media" style="border:3px solid #1bacbb;">
         <div class="column-image" style="background-color:#dedede;">
-            <img src="https://news.microsoft.com/wp-content/uploads/prod/2015/11/13-Nov-13-2015.-HOC-Hero-Image.jpg" style="width:100%; height:auto; text-align:center">
+            <img src="imgs/widephoto1.jpg" 
+            style="text-align:center; border:3px solid #1bacbb;">
         </div>
         
         <div class="column-video" style="background-color:#dedede;">
-            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/FC5FbmsH4fw?si=0a7OEwW6CDlNHosu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/mfmN8JTXt7A?si=UwUmgoe-pYtgfvMP" 
+            title="HoC2022" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen style="border:3px solid #1bacbb;"></iframe>
         </div>
         
-        <div class="column-image" style="background-color:#dedede">
-            <img src="https://news.microsoft.com/wp-content/uploads/prod/2015/11/13-Nov-13-2015.-HOC-Hero-Image.jpg" style="width:100%; height:auto; text-align:center">
+        <!-- <div class="column-image" style="background-color:#dedede">
+            <img src="imgs/_A648073.jpg" 
+            style="text-align:center; border:3px solid #1bacbb;">
+        </div> -->
+    </div>
+    <div class="row" id="media" style="border:3px solid #1bacbb;">
+        <div class="column-image" style="background-color:#dedede;">
+            <img src="imgs/widephoto2.jpg" 
+            style="text-align:center; border:3px solid #1bacbb;">
+        </div>
+        <div class="column-image" style="background-color:#dedede;">
+            <img src="imgs/widephoto3.jpg" 
+            style="text-align:center; border:3px solid #1bacbb;">
         </div>
     </div>
 
+
+    <!-- ORGANIZERS SECTION -->
     <h1 style="text-align:centered; background-color:#dedede; text-transform: uppercase;" > Организаторы: </h1>
+    <div class="row-organizers" id="contacts" style="background-color:#dedede; border:3px solid #1bacbb;">
 
-    <div class="row-organizers" style="background-color:#dedede">
         <div class="column-organizer">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502148606i/264.jpg" style="width:50%; height:auto; text-align:center">
-            <p> Даниил </p>
-            <p> Студент </p>
+            <img src="imgs/zhanna.jpg" 
+            style=" 
+            text-align:center;
+            border:3px solid #1bacbb">
+            <p> <strong>Даниил</strong></p>
+            <p> Студент,
+                <br>
+                <em>daniil.filimonov@nu.edu.kz</em>
+            </p>
         </div>
         
         <div class="column-organizer">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502148606i/264.jpg" style="width:50%; height:auto; text-align:center">
-            <p> Жанна </p>
-            <p> Организатор </p>
+            <img src="imgs/zhanna.jpg" 
+            style=" 
+            text-align:center;
+            border:3px solid #1bacbb">
+            <p><strong>Жанна</strong></p>
+            <p> Организатор, 
+                <br>
+                <em>@ustemrobotics.kz</em>
+            </p>
         </div>
         <div class="column-organizer">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502148606i/264.jpg" style="width:50%; height:auto; text-align:center">
-            <p> Константин </p>
-            <p> Организатор </p>
+            <img src="imgs/zhanna.jpg" 
+            style="
+            text-align:center;
+            border:3px solid #1bacbb">
+            <p> <strong>Константин</strong> </p>
+            <p> Организатор,
+                <br>
+                <em>email</em>  
+            </p>
         </div>
 
     </div>
 
+
+    <!-- FOOTER -->
     <footer>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
