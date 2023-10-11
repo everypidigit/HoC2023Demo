@@ -9,17 +9,24 @@
 </head>
 
 <body>
-
-
-    <!-- HEADER -->
+    <!-- HEADER + NAV -->
     <header>
         <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
-            <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
+            <a href="https://hourofcode.com/us">
             <img src="https://cdn.cookielaw.org/logos/a810c6a9-5986-41f3-b636-8944508580bc/137bbdcc-0f94-4459-a1f3-9c448fa6e7f1/efa1240a-7a30-46bc-b2ef-17d3f26df5f2/codedotorg.png" alt="hoc-Icon" class="header-icon">
+            </a>
+            <a href="https://hourofcode.com/us">
+            <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
+            </a>
+            <!-- <img src="imgs/stepLogo-min.png" alt="hoc-Icon" class="header-icon"> -->
         </div>
         <div>
-            <h1>hour of code | kazakhstan</h1>
+            <nav id="nav" style="border:3px solid #1bacbb;">
+                <a href="#hero">главная</a>
+                <a href="#media">отчёт</a>
+                <a href="#contacts">контакты</a>
+                <a href="#partners">партнёры</a>
+            </nav>
         </div>
         <div class="language-selector">
             <a href="kz.html" class="language-link">каз</a>
@@ -28,42 +35,25 @@
         </div>
     </header>
 
-
-    <!-- NAV -->
-    <nav id="nav" style="border:3px solid #1bacbb;">
-        <a href="#hero">главная</a>
-        <a href="#media">отчёт</a>
-        <a href="#contacts">контакты</a>
-        <a href="#">спонсоры</a>
-    </nav>
-
-
     <!-- HERO SECTION -->
-    <div class="row" id="hero" style="border:3px solid #1bacbb;" >
-        <div class="column-hero-image" style="background-color:#dedede; ">
-            <img src="imgs/hero1.png" 
-            style="
-            width:100%; 
-            height:100%; 
-            text-align:center;
-            border: 1px solid black">
-        </div>
-        
-        <div class="column-hero-text" 
-             style="background-color:#dedede;">
-            <p>
-            <h2>Добро пожаловать в мир кода!</h2>
-            <a href="#"><button class="hero-button">Начать</button></a>
-            <a href="#"><button class="hero-button">Регистрация волонтёров</button></a>
-            </p>
-        </div>
+    <div class="row" id="hero" >
+        <div class="column-hero-image" 
+        style="background-color:#dedede; width:100%">
+            <img src="https://unsplash.com/blog/content/images/2022/06/WC_AGI_01.jpg" >
+            <div class="column-hero-text">
+                <p>
+                <h2>Добро пожаловать на Час Кода!</h2>
+                <a href="#"><button class="hero-button" style="opacity: 100%;">Начать</button></a>
+                <a href="#"><button class="hero-button">Регистрация волонтёров</button></a>
+                </p>
+            </div>
+        </div>   
     </div>
 
 
     <!-- INFO SECTION -->
-    <div class="row-info" id="info" style="border:3px solid #1bacbb;" id="info">
-
-        <div class="column-info-text" style="background-color:#dedede;">
+    <div class="row-info" id="info"  id="info">
+        <div class="column-info-text">
             <h1 style="text-transform: uppercase;text-align: centered;">Что такое Час Кода?</h1>
             <p>Час кода - это глобальное движение, 
             которое охватывает несколько миллионов 
@@ -84,65 +74,60 @@
             программирования.</p>
         </div>
     
-        <div class="column-info-stats" style="background-color:#dedede;">
+        <div class="column-info-stats">
         <br>
             <img src="https://cdn-icons-png.flaticon.com/512/2451/2451548.png" style="width:50%; height:auto; text-align:center">
             <p> 20 регионов </p>
             <img src="https://static.thenounproject.com/png/3390875-200.png" style="width:50%; height:auto; text-align:center">
             <p> 102000 участников </p>
         </div>
-        <div class="column-info-stats" style="background-color:#dedede;">
+        <div class="column-info-stats">
         <br>
             <img src="https://static.thenounproject.com/png/1327868-200.png" style="width:50%; height:auto; text-align:center">
             <p> 57000 девочек </p>
             <img src="https://cdn-icons-png.flaticon.com/512/3870/3870231.png" style="width:50%; height:auto; text-align:center">
             <p> 45000 мальчиков </p>
-            </div>
+        </div>
     </div>
 
 
     <!-- MEDIA SECTION -->
     <h1 style="text-transform: uppercase; text-align: centered;"> Медиа: </h1>
-    <div class="row" id="media" style="border:3px solid #1bacbb;">
-        <div class="column-image" style="background-color:#dedede;">
-            <img src="imgs/widephoto1.jpg" 
-            style="text-align:center; border:3px solid #1bacbb;">
+    <div class="row" id="media">
+        <div class="column-image">
+            <img src="imgs/widephoto1-min.jpg" 
+            style="text-align:center; border:1px solid #515151; border-radius: 5px;">
         </div>
         
-        <div class="column-video" style="background-color:#dedede;">
+        <!-- TO DO: ADD PADDING FOR VIDEO -->
+        <div class="column-video">
             <iframe src="https://www.youtube.com/embed/mfmN8JTXt7A?si=UwUmgoe-pYtgfvMP" 
             title="HoC2022" 
-            frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen style="border:3px solid #1bacbb;"></iframe>
+            allowfullscreen style="border:1px solid #515151; border-radius: 5px; "></iframe>
         </div>
-        
-        <!-- <div class="column-image" style="background-color:#dedede">
-            <img src="imgs/_A648073.jpg" 
-            style="text-align:center; border:3px solid #1bacbb;">
-        </div> -->
     </div>
-    <div class="row" id="media" style="border:3px solid #1bacbb;">
-        <div class="column-image" style="background-color:#dedede;">
-            <img src="imgs/widephoto2.jpg" 
-            style="text-align:center; border:3px solid #1bacbb;">
+    <div class="row" id="media">
+        <div class="column-image">
+            <img src="imgs/widephoto2-min.jpg" 
+            style="text-align:center; border:1px solid #515151; border-radius: 5px;">
         </div>
-        <div class="column-image" style="background-color:#dedede;">
-            <img src="imgs/widephoto3.jpg" 
-            style="text-align:center; border:3px solid #1bacbb;">
+        <div class="column-image">
+            <img src="imgs/widephoto3-min.jpg" 
+            style="text-align:center; border:2px solid #515151; border-radius: 5px;">
         </div>
     </div>
 
 
     <!-- ORGANIZERS SECTION -->
-    <h1 style="text-align:centered; background-color:#dedede; text-transform: uppercase;" > Организаторы: </h1>
-    <div class="row-organizers" id="contacts" style="background-color:#dedede; border:3px solid #1bacbb;">
+    <h1 style="text-align:centered; text-transform: uppercase;" > Организаторы: </h1>
+    <div class="row-organizers" id="contacts">
 
         <div class="column-organizer">
-            <img src="imgs/zhanna.jpg" 
+            <img src="imgs/daniil-min.jpg" 
             style=" 
             text-align:center;
-            border:3px solid #1bacbb">
+            border:3px solid #515151">
             <p> <strong>Даниил</strong></p>
             <p> Студент,
                 <br>
@@ -151,10 +136,10 @@
         </div>
         
         <div class="column-organizer">
-            <img src="imgs/zhanna.jpg" 
+            <img src="imgs/zhanna-min.jpg" 
             style=" 
             text-align:center;
-            border:3px solid #1bacbb">
+            border:3px solid #515151">
             <p><strong>Жанна</strong></p>
             <p> Организатор, 
                 <br>
@@ -162,10 +147,10 @@
             </p>
         </div>
         <div class="column-organizer">
-            <img src="imgs/zhanna.jpg" 
+            <img src="imgs/Konstantin-min.jpg" 
             style="
             text-align:center;
-            border:3px solid #1bacbb">
+            border:3px solid #515151">
             <p> <strong>Константин</strong> </p>
             <p> Организатор,
                 <br>
@@ -176,19 +161,51 @@
     </div>
 
 
+
+    <!-- PARTNERS SECTION -->
+    <h1 style="text-transform: uppercase;text-align: centered;"> наши партнёры</h1>
+    <div class="row-info" id="partners" style="display: flex; align-items: center;">
+        <div class="column-info-stats">
+            <a href="https://kerneu.kz/en">
+            <img src="imgs/color-mark-logo-min.png" style="width:30%; height:auto; text-align:center">
+            </a>
+            <p style="text-transform: uppercase;"> <strong> Kerneu</strong> </p>
+
+            <br>
+
+            <a href="https://firstrobotics.kz/">
+            <img src="imgs/FIRST_Vertical_RGB-min.png" style="width:50%; height:auto; text-align:center">
+            </a>
+            <p style="text-transform: uppercase;"> <strong> First</strong> </p>
+
+            <br>
+
+        </div>
+        <div class="column-info-stats">
+            <a href="https://steptoenglish.org/about">
+            <img src="imgs/stepLogo-min.png" style="width:40%; height:auto; text-align:center">
+            </a>
+            <p style="text-transform: uppercase;"> <strong> step</strong> </p>
+
+            <br>
+
+            <a href="https://hourofcode.com/us">
+            <img src="https://cdn.cookielaw.org/logos/a810c6a9-5986-41f3-b636-8944508580bc/137bbdcc-0f94-4459-a1f3-9c448fa6e7f1/efa1240a-7a30-46bc-b2ef-17d3f26df5f2/codedotorg.png" 
+            style="width:30%; height:auto; text-align:center">
+            </a>
+            <p style="text-transform: uppercase;"> <strong> Hour of Code</strong> </p>
+
+            <br>
+            
+        </div>
+    </div>
+
     <!-- FOOTER -->
-    <footer>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png" alt="hoc-Icon" class="header-icon">
+    <footer id="footer">
         <br>
-		<p> <strong> hour of code | Kazakhstan | 2023</strong></p>
-        <br>
+        <img src="https://cdn.cookielaw.org/logos/a810c6a9-5986-41f3-b636-8944508580bc/137bbdcc-0f94-4459-a1f3-9c448fa6e7f1/efa1240a-7a30-46bc-b2ef-17d3f26df5f2/codedotorg.png" alt="hoc-Icon" class="header-icon">
         <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
-        <img src="https://hourofcode.com/us/en/images/hour-of-code-logo.png" alt="hoc-Icon" class="header-icon">
+        <p> <strong> hour of code | Kazakhstan | 2023</strong></p>
 	</footer>
 
 </body>
