@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: Garamond, serif;
+  font-family: 'Manrope', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 html, body {
@@ -467,7 +468,7 @@ nav.mobile-nav {
   }
   
 
-  
+
   nav a:hover {
     background-color: #1bacbb;
   }
