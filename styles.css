@@ -582,13 +582,15 @@ nav.mobile-nav {
   }
 
   .language-selector {
+    max-width: 100%;
     display: flex;
     align-items:flex-end;
   }
   
   .language-link {
-    margin-left: 0.5vw; 
-    padding: 1vw; 
+    /* margin-left: 0.5vw;  */
+    max-width: 100%;
+    padding: 0.5vw; 
     font-size: 2vw; 
     cursor: pointer;
     border: 1px solid #333;
